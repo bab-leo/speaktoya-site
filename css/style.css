@@ -25,7 +25,45 @@ header {
   object-position: top; /* or 'center', 'bottom', 'left', 'right', etc. */
   display: block;
 }
+.hero-banner {
+  position: relative;
+  width: 100vw;
+  height: 280px;
+  overflow: hidden;
+}
 
+.hero-banner .banner-image {
+  width: 100vw;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(80, 82, 152, 0.4); /* Optional: slight overlay for readability */
+  padding: 1em 2em;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(80, 82, 152, 0.10);
+  max-width: 90vw;
+}
+
+.hero-text h1 {
+  font-size: 2em;
+  margin: 0 0 0.5em 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  margin: 0 0 1em 0;
+}
 .logo {
   height: 70px;
   margin-bottom: 0.5em; /* Add spacing below logo */
@@ -230,6 +268,7 @@ button.cta {
     height: 160px;
   }
 }
+
 @media (max-width: 600px) {
   .main-nav .cta {
     width: auto;           /* Remove 100% width if present */
@@ -237,6 +276,18 @@ button.cta {
     margin-top: 0.5em;     /* Optional: add top margin if stacking */
     margin-left: 0;        /* Remove extra left margin if present */
     display: inline-block; /* Prevent stretching */
+  }
+}
+@media (max-width: 600px) {
+  .hero-banner, .hero-banner .banner-image {
+    height: 160px;
+  }
+  .hero-text {
+    padding: 0.5em 1em;
+    font-size: 1em;
+  }
+  .hero-text h1 {
+    font-size: 1.2em;
   }
 }
 /* ---------------------------------------
