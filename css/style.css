@@ -19,10 +19,11 @@ header {
   flex-direction: column; /* Stack logo and nav vertically */
 }
 .banner-image {
-  width: 100vw;         /* Full screen width */
-  height: 280px;        /* Adjust to match the example */
-  object-fit: cover;    /* Crops the image if needed */
+  width: 100vw;
+  height: 280px; /* or your preferred height */
+  object-fit: contain;
   display: block;
+  background: #000; /* Optional: sets background color for blank space */
 }
 
 .logo {
