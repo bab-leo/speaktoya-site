@@ -126,14 +126,12 @@ button.cta {
   padding: 2em;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(80,82,152,0.08);
+  box-shadow: 0 2px 8px rgba(80, 82, 152, 0.08);
   gap: 2em;
-  flex-wrap: wrap;
 }
 
 .about-hero .about-text {
-  flex: 1.2; /* ✅ text slightly larger for balance */
-  min-width: 300px;
+  flex: 1;
 }
 
 .about-hero .about-text h1 {
@@ -148,66 +146,38 @@ button.cta {
   font-size: 1.1em;
 }
 
-/* ✅ Fix for image cropping and responsiveness */
 .about-hero .about-image {
-  flex: 0.9; /* ✅ image slightly smaller for text dominance */
-  min-width: 280px;
+  flex: 1;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f6fa; /* subtle background for edges */
 }
 
+/* ✅ Slight Zoom-Out Fix for Full Image Visibility */
 .about-hero .about-image img {
-  width: 100%;
+  width: 110%;
   height: auto;
   border-radius: 8px;
   display: block;
-  object-fit: contain; /* shows full image without cropping */
-  max-height: 420px; /* keeps image in check */
+  object-fit: cover;
+  transform: scale(0.9); /* zoom out slightly */
+  transform-origin: center center;
 }
 
-/* ✅ Mobile friendly layout */
-@media (max-width: 900px) {
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
     text-align: center;
-    padding: 1.5em;
   }
-
-  .about-hero .about-text {
-    flex: 1;
-  }
-
   .about-hero .about-image {
-    flex: 1;
     margin-top: 1.5em;
   }
-
-  .about-hero .about-text h1 {
-    font-size: 1.8em;
-  }
-
-  .about-hero .about-text p {
-    font-size: 1em;
-  }
-
   .about-hero .about-image img {
-    max-height: 350px;
     width: 100%;
-    object-fit: contain;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-hero .about-text h1 {
-    font-size: 1.6em;
-  }
-
-  .about-hero .about-text p {
-    font-size: 0.95em;
+    transform: none; /* disable zoom adjustment on small screens */
   }
 }
 
