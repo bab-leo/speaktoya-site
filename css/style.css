@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-header, footer {
+header {
   background: #5246d8;
   color: #fff;
   display: flex;
