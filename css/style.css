@@ -27,7 +27,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  gap: 2em; /* Space between nav links */
+  gap: 1em; /* Space between nav links */
 }
 
 nav a.cta, button.cta {
