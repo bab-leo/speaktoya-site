@@ -230,6 +230,15 @@ button.cta {
     height: 160px;
   }
 }
+@media (max-width: 600px) {
+  .main-nav .cta {
+    width: auto;           /* Remove 100% width if present */
+    padding: 0.5em 1em;    /* Reduce left/right padding */
+    margin-top: 0.5em;     /* Optional: add top margin if stacking */
+    margin-left: 0;        /* Remove extra left margin if present */
+    display: inline-block; /* Prevent stretching */
+  }
+}
 /* ---------------------------------------
    🌿 Feature Image Section (Optional)
    --------------------------------------- */
