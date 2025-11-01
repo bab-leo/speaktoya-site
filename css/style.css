@@ -20,10 +20,10 @@ header {
 }
 .banner-image {
   width: 100vw;
-  height: 280px; /* or your preferred height */
-  object-fit: contain;
+  height: 280px;
+  object-fit: cover; /* or contain, as desired */
+  object-position: top; /* or 'center', 'bottom', 'left', 'right', etc. */
   display: block;
-  background: #000; /* Optional: sets background color for blank space */
 }
 
 .logo {
