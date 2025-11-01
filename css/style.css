@@ -1,3 +1,6 @@
+/* ---------------------------------------
+   🧩 Base Styles
+   --------------------------------------- */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #f5f6fa;
@@ -93,4 +96,149 @@ input, textarea {
 }
 
 button.cta {
-  align-self:
+  align-self: flex-end;
+}
+
+@media (max-width: 600px) {
+  header, main {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+}
+
+/* ---------------------------------------
+   🌄 Full-Width Hero Banner (like Grafton)
+   --------------------------------------- */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 450px; /* adjust height as desired */
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes image fill the area nicely */
+  display: block;
+}
+
+/* Optional overlay text */
+.hero-banner .hero-text {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-banner .hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  font-weight: 700;
+}
+
+.hero-banner .hero-text p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 300px;
+  }
+  .hero-banner .hero-text h1 {
+    font-size: 1.8em;
+  }
+  .hero-banner .hero-text p {
+    font-size: 1em;
+  }
+}
+
+/* ---------------------------------------
+   🌿 Garden Image Section
+   --------------------------------------- */
+.feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 1em;
+  background: #f5f6fa; /* matches site background */
+}
+
+.image-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(80, 82, 152, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 24px rgba(80, 82, 152, 0.15);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------------------------------------
+   🪴 Image + Text Section (optional)
+   --------------------------------------- */
+.image-text-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 3em auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(80,82,152,0.08);
+}
+
+.image-text-section .text {
+  flex: 1;
+}
+
+.image-text-section .text h2 {
+  color: #5246d8;
+  margin-bottom: 0.5em;
+}
+
+.image-text-section .text p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.image-text-section .image {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-text-section .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+  }
+}
+
