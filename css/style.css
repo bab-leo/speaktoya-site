@@ -9,26 +9,25 @@ body {
   padding: 0;
 }
 
-header, footer {
+header {
   background: #5246d8;
   color: #fff;
   display: flex;
+  justify-content: center; /* Center content horizontally */
   align-items: center;
-  justify-content: space-between;
   padding: 0.5em 2em;
+  flex-direction: column; /* Stack logo and nav vertically */
 }
 
 .logo {
   height: 70px;
-  margin-right: 1em;
+  margin-bottom: 0.5em; /* Add spacing below logo */
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1em;
-  font-weight: 500;
-  transition: color 0.2s;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em; /* Space between nav links */
 }
 
 nav a.cta, button.cta {
