@@ -252,7 +252,62 @@ button.cta {
   display: block;
   object-fit: cover;
 }
+.services-circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 3em 0 2em 0;
+}
 
+.service-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #5246d8 60%, #2e75bb 100%);
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(80,82,152,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+  color: #fff;
+  text-align: center;
+  font-size: 1.05em;
+  font-weight: 600;
+  padding: 1em;
+  letter-spacing: 0.5px;
+}
+
+.service-circle p {
+  text-align: center;
+  font-size: 1em;
+  color: #222;
+  margin: 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .services-circles {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+  .service-circle {
+    width: 90vw;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    font-size: 0.95em;
+  }
+}
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .about-hero {
