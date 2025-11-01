@@ -31,10 +31,12 @@ header {
   margin-bottom: 0.5em; /* Add spacing below logo */
 }
 
-nav {
+nav ul {
+   list-xtyle: none;
+   padding: 0;
+   margin: 10px 0;
   display: flex;
   justify-content: center;
-  gap: 1em; /* Space between nav links */
 }
 
 nav a.cta, button.cta {
