@@ -19,10 +19,10 @@ header {
   flex-direction: column; /* Stack logo and nav vertically */
 }
 .banner-image {
-  width: 100%;           /* Make the image full width */
-  height: auto;          /* Keep aspect ratio */
+  width: 100vw;         /* Full screen width */
+  height: 280px;        /* Adjust to match the example */
+  object-fit: cover;    /* Crops the image if needed */
   display: block;
-  margin: 0 auto;        /* Center the image horizontally */
 }
 
 .logo {
@@ -173,7 +173,11 @@ button.cta {
     margin-top: 1.5em;
   }
 }
-
+@media (max-width: 600px) {
+  .banner-image {
+    height: 160px;
+  }
+}
 /* ---------------------------------------
    🌿 Feature Image Section (Optional)
    --------------------------------------- */
