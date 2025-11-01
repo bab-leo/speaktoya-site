@@ -18,6 +18,12 @@ header {
   padding: 0.5em 2em;
   flex-direction: column; /* Stack logo and nav vertically */
 }
+.banner-image {
+  width: 100%;           /* Make the image full width */
+  height: auto;          /* Keep aspect ratio */
+  display: block;
+  margin: 0 auto;        /* Center the image horizontally */
+}
 
 .logo {
   height: 70px;
