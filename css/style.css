@@ -20,7 +20,7 @@ header {
 }
 .banner-image {
   width: 100vw;
-  height: 280px;
+  height: 250px;
   object-fit: cover; /* or contain, as desired */
   object-position: top; /* or 'center', 'bottom', 'left', 'right', etc. */
   display: block;
@@ -34,7 +34,7 @@ header {
 
 .hero-banner .banner-image {
   width: 100vw;
-  height: 280px;
+  height: 250px;
   object-fit: cover;
   display: block;
 }
