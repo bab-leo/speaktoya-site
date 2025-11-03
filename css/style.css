@@ -18,18 +18,21 @@ header {
   padding: 0.5em 2em;
   flex-direction: column; /* Stack logo and nav vertically */
 }
-.banner-image {
-  width: 100vw;
-  height: 250px;
-  object-fit: cover; /* or contain, as desired */
-  object-position: center; /* or 'center', 'bottom', 'left', 'right', etc. */
-  display: block;
-}
+/* HERO BANNER (image sits under header/nav) */
 .hero-banner {
-  position: relative;
-  width: 100vw;
-  height: 280px;
-  overflow: hidden;
+  width: 100%;
+  overflow: hidden;      /* hide any small overflow */
+  background: transparent;
+}
+
+/* Banner image sizing and zoom behavior */
+.banner-image {
+  width: 100%;
+  height: 280px;         /* desktop height you preferred; change to taste */
+  max-width: 100vw;
+  object-fit: contain;   /* show entire image (zoomed out) without cropping */
+  object-position: center;
+  display: block;
 }
 
 .hero-banner .banner-image {
