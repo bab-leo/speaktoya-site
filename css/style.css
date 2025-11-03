@@ -18,44 +18,33 @@ header {
   padding: 0.5em 2em;
   flex-direction: column; /* Stack logo and nav vertically */
 }
-/* HERO BANNER (image sits under header/nav) */
 .hero-banner {
+  position: relative;      /* establishes a positioning context */
   width: 100%;
-  overflow: hidden;      /* hide any small overflow */
+  overflow: hidden;
   background: transparent;
+  height: 280px;           /* same height as the image */
 }
 
-/* Banner image sizing and zoom behavior */
 .banner-image {
   width: 100%;
-  height: 280px;         /* desktop height you preferred; change to taste */
-  max-width: 100vw;
-  object-fit: contain;   /* show entire image (zoomed out) without cropping */
-  object-position: center;
-  display: block;
-}
-
-.hero-banner .banner-image {
-  width: 100vw;
-  height: 250px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;     /* or cover + object-position tweak */
   display: block;
 }
 
 .hero-text {
-  position: absolute;
+  position: absolute;      /* sits on top of the image */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;              /* ensures text is above the image */
   color: #fff;
   text-align: center;
-  background: rgba(80, 82, 152, 0.4); /* Optional: slight overlay for readability */
-  padding: 1em 2em;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(80, 82, 152, 0.10);
-  max-width: 90vw;
+  padding: 0.6rem 1.2rem;
+  background: rgba(0,0,0,0.35); /* optional overlay for readability */
+  border-radius: 8px;
 }
-
 .hero-text h1 {
   font-size: 2em;
   margin: 0 0 0.5em 0;
