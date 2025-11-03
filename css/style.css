@@ -307,7 +307,7 @@ button.cta {
     height: 100px;
     font-size: 0.95em;
   }
-}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .about-hero {
