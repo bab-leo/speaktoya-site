@@ -302,6 +302,7 @@ button.cta {
     align-items: center;
     gap: 1.5em;
   }
+}
   .service-circle {
     width: 90vw;
   }
@@ -317,13 +318,14 @@ button.cta {
     flex-direction: column;
     text-align: center;
   }
+     }
   .about-hero .about-image {
     margin-top: 1.5em;
   }
-}
 @media (max-width: 600px) {
   .banner-image {
     height: 160px;
+    object-fit: contain; /* or scale-down */
   }
 }
 
