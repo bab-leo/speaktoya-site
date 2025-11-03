@@ -22,7 +22,7 @@ header {
   width: 100vw;
   height: 250px;
   object-fit: cover; /* or contain, as desired */
-  object-position: top; /* or 'center', 'bottom', 'left', 'right', etc. */
+  object-position: center; /* or 'center', 'bottom', 'left', 'right', etc. */
   display: block;
 }
 .hero-banner {
