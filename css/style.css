@@ -329,7 +329,7 @@ button.cta {
 }
 @media (max-width: 600px) {
   .hero-banner, .hero-banner .banner-image {
-    height: 160px;
+    height: 200px;
   }
 }
   .hero-text {
