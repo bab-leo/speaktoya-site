@@ -255,7 +255,7 @@ button.cta {
 .service-circle {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: right;
   width: 220px;
 }
 
