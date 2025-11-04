@@ -27,9 +27,9 @@ header {
 }
 
 .banner-image {
-  width: 90%;
-  height: 150%;
-  object-fit: cover     /* or cover + object-position tweak */
+  width: 200%;
+  height: 2000%;
+  object-fit: cover;    /* or cover + object-position tweak */
   display: inline;
 }
 
