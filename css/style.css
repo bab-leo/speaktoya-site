@@ -10,13 +10,17 @@ body {
 }
 
 header {
-  background: #5246d8;
+  background: #615cfb;
   color: #fff;
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center;
   padding: 0.5em 2em;
   flex-direction: column; /* Stack logo and nav vertically */
+}
+.site-header {
+  max-height: 90px;      /* choose a comfortable header height */
+  overflow: hidden;      /* hide any overflowing background/art */
 }
 .hero-banner {
   position: relative;      /* establishes a positioning context */
@@ -191,9 +195,6 @@ button.cta {
     padding: 1em;
   }
 }
-  .logo {
-    margin-bottom: 1em;
-  }
 
 
 /* ---------------------------------------
