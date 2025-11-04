@@ -29,7 +29,7 @@ header {
 .banner-image {
   width: 200%;
   height: 100%;
-  object-fit: contain;     /* or cover + object-position tweak */
+  object-fit: cover     /* or cover + object-position tweak */
   display: block;
 }
 
