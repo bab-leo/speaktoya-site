@@ -23,7 +23,7 @@ header {
   width: 100%;
   overflow: hidden;
   background: transparent;
-  height: 280px;           /* same height as the image */
+  height: 200px;           /* same height as the image */
 }
 
 .banner-image {
