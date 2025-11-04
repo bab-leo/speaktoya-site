@@ -74,7 +74,7 @@ nav a.cta, button.cta {
   color: #fff;
   padding: 0.5em 1em;
   border-radius: 25px;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   margin-left: 1em;
   border: none;
@@ -108,7 +108,7 @@ nav a:hover, button.cta:hover {
 .main-nav a {
   background: none;      /* No background */
   color: #fff;           /* Keeps text white, or set to your desired color */
-  border-radius: 0;      /* No rounded corners */
+  border-radius: 5;      /* No rounded corners */
   text-decoration: none;
   padding: 0.5em 1em;
   font-weight: 500;
