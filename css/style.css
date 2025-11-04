@@ -13,15 +13,16 @@ header {
   background: #615cfb;
   color: #fff;
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center;
-  padding: 0.5em 2em;
+   justify-content: flex-start;
   flex-direction: column; /* Stack logo and nav vertically */
+    z-index: 10;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    overflow: hidden;
 }
-.site-header {
-  max-height: 90px;      /* choose a comfortable header height */
-  overflow: hidden;      /* hide any overflowing background/art */
-}
+
 .hero-banner {
   position: relative;      /* establishes a positioning context */
   width: 100%;
