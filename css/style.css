@@ -23,11 +23,11 @@ header {
   width: 100%;
   overflow: hidden;
   background: transparent;
-  height: 100px;           /* same height as the image */
+  height: 200px;           /* same height as the image */
 }
 
 .banner-image {
-  width: 100%;
+  width: 200%;
   height: 100%;
   object-fit: contain;     /* or cover + object-position tweak */
   display: block;
