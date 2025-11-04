@@ -90,8 +90,8 @@ nav a:hover, button.cta:hover {
    --------------------------------------- */
 .main-nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   gap: 1.5em;
   width: 100%;
   background: transparent; /* header handles background color */
