@@ -57,8 +57,8 @@ header {
   margin: 0 0 1em 0;
 }
 .logo {
-  height: 75px;
-  margin-bottom: 0.3em; /* Add spacing below logo */
+  height: 70px;
+  margin-bottom: 1em; /* Add spacing below logo */
 }
 
 nav ul {
