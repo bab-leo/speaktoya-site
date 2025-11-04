@@ -31,9 +31,8 @@ header {
 }
 
 .banner-image {
-  width: 200%;
-  height: 2000%;
-  display: inline;
+  width: 2560px; 
+  height: 640px;
 }
 
 .hero-text {
